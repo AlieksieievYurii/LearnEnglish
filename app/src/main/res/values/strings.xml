@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">LearEnglish</string>
+    <string name="text_btn_add_words">Add word</string>
+    <string name="text_btn_make_test">Make Test</string>
+    <string name="activity_add_word_plus">+</string>
+    <string name="activity_add_word_hint_translate">Translation...</string>
+    <string name="activity_add_word_hint_word">Word...</string>
+    <string name="activity_make_test_traslation">Translation...</string>
+    <string name="activity_make_test_check">Check</string>
+    <string name="alert_test_setting_start">Start</string>
+    <string name="toggle_button_end_to_rus"><![CDATA[->]]></string>
+    <string name="toggle_button_rus_to_ang"><![CDATA[<-]]></string>
+    <string name="text_ang">English</string>
+    <string name="text_rus">Russian</string>
+    <string name="text_test_setting">Test setting</string>
+    <string name="text_start">Start</string>
+</resources>

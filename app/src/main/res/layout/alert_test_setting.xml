@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="30dp"
+    android:paddingRight="30dp"
+    android:paddingBottom="20dp"
+    android:paddingTop="5dp"
+    android:background="@drawable/main_activity_background">
+
+    <TextView
+        android:id="@+id/header_text_test_setting"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:text="@string/text_test_setting"/>
+    <LinearLayout
+        android:id="@+id/alert_test_setting_count"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/header_text_test_setting"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+        <EditText
+            android:id="@+id/edt_count"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="5"
+            android:background="@drawable/main_activity_buttons_background"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:paddingRight="5dp"
+            android:paddingLeft="5dp"
+            android:textAlignment="center"
+
+            android:inputType="number"/>
+        <SeekBar
+            android:id="@+id/seek_bar_count_words"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/alert_test_setting_res_ang"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_below="@id/alert_test_setting_count">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:layout_marginRight="10dp"
+            android:text="@string/text_ang"
+            android:layout_marginEnd="10dp" />
+        <ToggleButton
+            android:id="@+id/toggleButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textOn="@string/toggle_button_rus_to_ang"
+            android:textOff="@string/toggle_button_end_to_rus"
+            android:background="@drawable/main_activity_buttons_background"
+            android:textColor="@color/white"
+            android:textSize="20sp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:layout_marginLeft="10dp"
+            android:textSize="20sp"
+            android:text="@string/text_rus"
+            android:layout_marginStart="10dp" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/alert_setting_btn_start"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/main_activity_buttons_background"
+        android:layout_below="@id/alert_test_setting_res_ang"
+        android:text="@string/alert_test_setting_start"
+        android:textColor="@color/white"
+        />
+
+</RelativeLayout>

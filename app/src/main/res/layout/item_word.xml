@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal"
+    android:background="@drawable/item_background"
+    android:layout_margin="5dp">
+
+    <TextView
+        android:id="@+id/item_tv_word"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:text="Bring"
+        android:textColor="@color/white"
+        android:layout_marginLeft="10dp"
+        android:textSize="25sp"
+        android:layout_marginBottom="3dp"
+        android:layout_weight="1"
+        android:layout_marginStart="5dp" />
+    <TextView
+        android:id="@+id/item_tv_translation"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        tools:text="Перенести"
+        android:textColor="@color/white"
+        android:gravity="right"
+        android:layout_marginRight="10dp"
+        android:textSize="25sp"
+        android:layout_marginBottom="3dp"
+        android:layout_marginEnd="10dp" />
+
+
+</LinearLayout>

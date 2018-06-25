@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ActivityMakeTest"
+    android:background="@drawable/main_activity_background">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true">
+    <RelativeLayout
+        android:id="@+id/circule_res"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_centerHorizontal="true"
+        android:adjustViewBounds="true"
+        android:scaleType="fitCenter"
+        android:background="@drawable/circule_for_make_test"
+        android:padding="10dp">
+        <TextView
+            android:id="@+id/activity_make_test_res"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/text_start"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:textColor="@color/white"
+            android:textStyle="bold"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/activity_make_test_body"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/circule_res"
+        android:visibility="gone">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:paddingLeft="40dp"
+        android:paddingRight="40dp"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/tv_word_activity_make_test"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="30sp"
+            android:textColor="@color/white"
+            tools:text="Bring"/>
+        <EditText
+            android:id="@+id/edt_traslation_activity_make_test"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/activity_make_test_traslation"
+            android:layout_marginTop="30dp"
+            android:inputType="text"
+            android:textColorHint="@color/white"
+            android:textColor="@color/white"
+            android:background="@drawable/main_activity_buttons_background"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"/>
+
+        <Button
+            android:id="@+id/btn_check"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/main_activity_buttons_background"
+            android:textColor="@color/white"
+            android:text="@string/activity_make_test_check"
+            android:layout_marginTop="80dp"/>
+    </LinearLayout>
+
+    </RelativeLayout>
+    </RelativeLayout>
+
+
+</RelativeLayout>

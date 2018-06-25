@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ActivityAddWord"
+    android:background="@drawable/main_activity_background">
+
+    <ListView
+        android:id="@+id/lst_words"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/lnr_edits_for_words"
+        android:layout_marginRight="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginStart="5dp"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="3dp"/>
+
+    <LinearLayout
+        android:id="@+id/lnr_edits_for_words"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#2d8e9b"
+        android:padding="5dp"
+        android:orientation="horizontal">
+
+       <EditText
+           android:id="@+id/edt_word"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_weight="1"
+           android:inputType="text"
+           android:textColorHint="@color/white"
+           android:paddingRight="5dp"
+           android:paddingLeft="10dp"
+           android:paddingTop="5dp"
+           android:paddingBottom="5dp"
+           android:background="@drawable/main_activity_buttons_background"
+           android:hint="@string/activity_add_word_hint_word"
+           android:paddingEnd="5dp"
+           android:paddingStart="10dp"
+           android:layout_marginRight="2dp"
+           android:layout_marginEnd="2dp" />
+
+        <EditText
+            android:id="@+id/edt_translate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:inputType="text"
+            android:paddingRight="5dp"
+            android:paddingLeft="10dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:background="@drawable/main_activity_buttons_background"
+            android:textColorHint="@color/white"
+            android:hint="@string/activity_add_word_hint_translate"
+            android:paddingEnd="5dp"
+            android:paddingStart="10dp"
+            android:layout_marginRight="2dp"
+            android:layout_marginEnd="2dp" />
+        <Button
+            android:id="@+id/btn_add_to_base"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:background="@drawable/activity_add_word_button_background"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:text="@string/activity_add_word_plus"/>
+    </LinearLayout>
+
+</RelativeLayout>
